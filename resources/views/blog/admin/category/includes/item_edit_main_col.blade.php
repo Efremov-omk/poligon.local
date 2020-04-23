@@ -16,7 +16,6 @@
                 <br>
                 <div class="tab-content">
                     <div class="tab-pane active" id="maindata" role="tabpanel">
-
                         <div class="form-group">
                             <label for="title">Заголовок</label>
                             <input name="title" value="{{ $item->title }}"
@@ -57,7 +56,8 @@
                             <textarea name="description"
                                     id="description"
                                     class="form-control"
-                                    rows="3">{{ old('description', $item->description) }}</textarea>
+                                    rows="3">{{ old('description', $item->description) }}
+                            </textarea>
                         </div>
                     </div>
                 </div>
