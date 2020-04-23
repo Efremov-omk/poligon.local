@@ -59,7 +59,6 @@
                                     class="form-control"
                                     rows="3">{{ old('description', $item->description) }}</textarea>
                         </div>
-
                     </div>
                 </div>
             </div>
