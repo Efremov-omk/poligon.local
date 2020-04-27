@@ -37,7 +37,7 @@
 
                         <div class="form-group">
                             <label for="parent_id">Родитель</label>
-                            <select name="parent_id" value="{{ $item->slug }}"
+                            <select name="parent_id"
                                     id="parent_id"
                                     class="form-control"
                                     placeholder="Выберите категорию"
@@ -46,7 +46,7 @@
                                     <option value="{{ $categoryOption->id }}"
                                         @if($categoryOption->id == $item->parent_id) selected @endif>
                                         {{-- {{ $categoryOption->id }} . {{ $categoryOption->title }} --}}
-                                        {{ $categoryOption->id_title }}
+                                        {{ $categoryOption->id }}. {{ $categoryOption->title }}
                                     </option>
                                 @endforeach
                             </select>
@@ -59,6 +59,7 @@
                                     class="form-control"
                                     rows="3">{{ old('description', $item->description) }}</textarea>
                         </div>
+
                     </div>
                 </div>
             </div>
